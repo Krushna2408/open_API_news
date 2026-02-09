@@ -1,0 +1,44 @@
+.politics {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #4a4a4a;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #4a4a4a;
+  padding-bottom: 5px;
+}
+
+.politics article {
+  margin-bottom: 15px;
+}
+
+.politics h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2c2c2c;
+}
+
+.politics p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+
+.readMore {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+

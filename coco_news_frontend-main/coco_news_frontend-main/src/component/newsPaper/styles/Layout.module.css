@@ -1,0 +1,33 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.articles {
+  flex: 2;
+  min-width: 300px;
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+  }
+
+  .articles,
+  .sidebar {
+    width: 100%;
+  }
+}
+

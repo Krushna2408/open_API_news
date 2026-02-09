@@ -1,0 +1,107 @@
+.header {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  cursor: pointer;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+}
+
+.weatherNav {
+  margin-right: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdownContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownContent a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.loginBtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.loginBtn:hover {
+  background-color: #45a049;
+}
+
+.logoutBtn {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logoutBtn:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .logo{
+    width: 100%;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rightSection {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .weatherNav {
+    margin-right: 0;
+  }
+}
+
