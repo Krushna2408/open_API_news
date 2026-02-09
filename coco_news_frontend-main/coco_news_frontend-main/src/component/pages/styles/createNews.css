@@ -1,0 +1,52 @@
+.create-news {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Georgia", serif;
+}
+
+.create-news h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.create-news form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-news input,
+.create-news textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.create-news textarea {
+  min-height: 150px;
+}
+
+.create-news button {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-news button:hover {
+  background-color: #444;
+}
+
+.create-news p {
+  margin-top: 15px;
+  font-weight: bold;
+}
+

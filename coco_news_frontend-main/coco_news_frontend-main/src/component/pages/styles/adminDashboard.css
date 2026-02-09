@@ -1,0 +1,63 @@
+.admin-dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Georgia", serif;
+}
+
+.admin-dashboard h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.draft-article {
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.draft-article h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.draft-article p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.draft-article button {
+  margin-right: 10px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.publish-button {
+  background-color: #2ecc71;
+}
+
+.publish-button:hover {
+  background-color: #27ae60;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+

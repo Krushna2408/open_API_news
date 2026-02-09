@@ -1,0 +1,44 @@
+.entertainment {
+  background-color: #fff0f5;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #ff69b4;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #ff69b4;
+  padding-bottom: 5px;
+}
+
+.entertainment article {
+  margin-bottom: 15px;
+}
+
+.entertainment h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2c2c2c;
+}
+
+.entertainment p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+
+.readMore {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+

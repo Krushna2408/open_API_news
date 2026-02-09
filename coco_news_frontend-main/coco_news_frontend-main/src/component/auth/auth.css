@@ -1,0 +1,338 @@
+/* General Styles */
+.login-page {
+    display: flex;
+    min-height: 92vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .login-page {
+        padding: 2.5rem;
+    }
+}
+
+/* Wrapper */
+.login-wrapper {
+    width: 100%;
+    max-width: 24rem;
+}
+
+@media (min-width: 768px) {
+    .login-wrapper {
+        max-width: 48rem;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .login-page {
+        background-color: #111827;
+    }
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 48rem;
+    width: 100%;
+}
+
+/* Card */
+.card {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Card Content */
+.card-content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .card-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Form Styling */
+.login-form {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .login-form {
+        padding: 2rem;
+    }
+}
+
+/* Form Header */
+.form-header {
+    text-align: center;
+}
+
+.form-header h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-header p {
+    color: #6b7280;
+}
+
+/* Form Groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Password Header */
+.password-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Forgot Password Link */
+.forgot-password-container {
+    text-align: right;
+    margin-top: -0.5rem;
+  }
+  
+  .forgot-password {
+    color: #007bff;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+/* Primary Button */
+.btn-primary {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+}
+
+/* Divider */
+.divider {
+    position: relative;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.divider::before,
+.divider::after {
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    border-top: 1px solid #e5e7eb;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.btn-outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-outline:hover {
+    background-color: #f3f4f6;
+}
+
+.btn-outline svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Signup Link */
+.signup-link {
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.signup-link a {
+    text-decoration: underline;
+    color: #3b82f6;
+    transition: color 0.2s ease-in-out;
+}
+
+.signup-link a:hover {
+    color: #2563eb;
+}
+
+/* Image Container */
+.image-container {
+    display: none;
+    position: relative;
+    background-color: #f3f4f6;
+}
+
+@media (min-width: 768px) {
+    .image-container {
+        display: block;
+    }
+}
+
+/* Login Image */
+.login-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover .login-image {
+    transform: scale(1.05);
+}
+
+/* Terms */
+.terms {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.terms a {
+    text-decoration: underline;
+    color: #3b82f6;
+    transition: color 0.2s ease-in-out;
+}
+
+.terms a:hover {
+    color: #2563eb;
+}
+
+/* Dark Mode Adjustments */
+@media (prefers-color-scheme: dark) {
+    .card {
+        background-color: #1f2937;
+        color: #f3f4f6;
+    }
+
+    .form-header p,
+    .forgot-password,
+    .divider,
+    .terms {
+        color: #9ca3af;
+    }
+
+    .form-group input,
+    .btn-outline {
+        background-color: #374151;
+        border-color: #4b5563;
+        color: #f3f4f6;
+    }
+
+    .form-group input:focus {
+        border-color: #2563eb;
+    }
+
+    .btn-primary {
+        background-color: #2563eb;
+    }
+
+    .btn-primary:hover {
+        background-color: #1e40af;
+    }
+
+    .login-image {
+        filter: brightness(0.5) grayscale(0.8);
+    }
+    .password-container input {
+        background-color: #374151;
+        border-color: #4b5563;
+        color: #f3f4f6;
+      }
+    
+      .password-container input:focus {
+        border-color: #2563eb;
+      }
+    
+      .password-toggle {
+        color: #f3f4f6;
+      }
+    
+      .password-toggle:hover {
+        color: #2563eb;
+      }
+}
+
+/* Password Container with Show Password Icon */
+.password-container {
+    position: relative;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    right: 10px; /* Align icon to the right */
+    top: 62%;
+    transform: translateY(-50%); /* Center the icon vertically */
+    cursor: pointer;
+    color: #888; /* Icon color */
+  }
+  
+  .password-toggle:hover {
+    color: #000; /* Icon color on hover */
+  }
+
+  
